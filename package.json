@@ -1,0 +1,42 @@
+{
+  "name": "protractor-retry",
+  "description": "module for protractor to automatically re-run failed tests with specific number of attempts",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yahoo/Protractor-retry"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "protractor test/protractor.conf.js"
+  },
+  "author": "Amro Tahtamouni",
+  "contributors": [
+    {
+      "name": "Amro Tahtamouni",
+      "email": "amrot@yahoo-inc.com"
+    },
+    {
+      "name": "Dreux Ludovic",
+      "email": "dreuxl@yahoo-inc.com"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "array-unique": "~0.3.2",
+    "chai": "3.x",
+    "chai-as-promised": "5.x",
+    "debug": "^2.1.1",
+    "eslint": "^1.5.1",
+    "eslint-config-eslint": "^4.0.0",
+    "mocha": "~2.4.5",
+    "protractor": "^4.0.0",
+    "q": "^1.4.1",
+    "xml2js": "~0.4.17",
+    "yargs": "^4.2.0"
+  },
+  "keywords": [
+    "protractor",
+    "retry"
+  ]
+}
