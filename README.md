@@ -31,7 +31,7 @@ var retry = require('protractor-retry').retry;
 
 #### Step 2: onPrepare ( Your Protractor Config )
 ```js 
-beforeOnPrepare: function() { 
+onPrepare: function() { 
   retry.onPrepare(); 
 }
 ```
