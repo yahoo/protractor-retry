@@ -16,7 +16,7 @@ It is from within protractor itself and not relying on any external dependency. 
 
 The module will create an XML file which contains the failed spec(s) filename(s). and will re-run only them, till either we don't have anymore failures or we reached the retry attempt maximum.
 
-The process of retrying is not on the fly of a test failing but after the testsuite is run. The failed tests are stored and only those ones are going to be rerun.
+The process of retrying is not happening on the fly of a test failure but only after the whole testsuite is run. The failed tests are stored and only those ones are going to be rerun.
 
 <img src="https://user-images.githubusercontent.com/12041605/30344129-ea28261e-97b4-11e7-99fe-4a28ff74b547.jpg" align="center" height="390" width="390" /><br/><br/>
 
