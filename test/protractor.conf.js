@@ -3,16 +3,17 @@ var retry = require('../lib/retry');
 
 exports.config = {
     framework:'mocha',
+    mochaOpts: {
+        enableTimeouts: false
+    },
     specs: ['./specs/*.spec.js'],
     capabilities: {
         shardTestFiles: true,
         maxInstances: 4,
         browserName: 'firefox'
     },
-//     sauceUser: 'sso-yahoo-homepage-sauce',
     sauceUser: process.env.SAUCE_USERNAME,
     sauceKey: process.env.SAUCE_ACCESS_KEY,
-    ignoreSynchronization: true,
     onCleanUp: function (results) {
         retry.onCleanUp(results);
     },
