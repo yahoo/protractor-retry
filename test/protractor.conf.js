@@ -9,8 +9,9 @@ exports.config = {
         maxInstances: 4,
         browserName: 'firefox'
     },
-    sauceUser: 'sso-yahoo-homepage-sauce',
-    sauceKeyName: 'sso-yahoo-homepage',
+//     sauceUser: 'sso-yahoo-homepage-sauce',
+    sauceUser: process.env.SAUCE_USERNAME,
+    sauceKey: process.env.SAUCE_ACCESS_KEY,
     onCleanUp: function (results) {
         retry.onCleanUp(results);
     },
