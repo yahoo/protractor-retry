@@ -3,3 +3,7 @@ language: node_js
 node_js:
   - 7
   - 6
+addons:
+  sauce_connect:
+    username: "sso-yahoo-homepage-sauce"
+    access_key: "sso-yahoo-homepage"
