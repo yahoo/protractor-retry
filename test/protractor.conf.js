@@ -11,11 +11,11 @@ exports.config = {
         shardTestFiles: true,
         maxInstances: 4,
         browserName: 'firefox'
+        tunnel-identifier: process.env.TRAVIS_JOB_NUMBER,
+        build: process.env.TRAVIS_BUILD_NUMBER
     },
     sauceUser: process.env.SAUCE_USERNAME,
     sauceKey: process.env.SAUCE_ACCESS_KEY,
-    tunnel-identifier: process.env.TRAVIS_JOB_NUMBER,
-    build: process.env.TRAVIS_BUILD_NUMBER,
     onCleanUp: function (results) {
         retry.onCleanUp(results);
     },
