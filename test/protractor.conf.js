@@ -12,6 +12,7 @@ exports.config = {
 //     sauceUser: 'sso-yahoo-homepage-sauce',
     sauceUser: process.env.SAUCE_USERNAME,
     sauceKey: process.env.SAUCE_ACCESS_KEY,
+    ignoreSynchronization: true,
     onCleanUp: function (results) {
         retry.onCleanUp(results);
     },
