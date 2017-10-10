@@ -7,14 +7,11 @@ exports.config = {
         enableTimeouts: false
     },
     specs: ['./specs/*.spec.js'],
-    buildName: process.env.TRAVIS_BRANCH +'-'+process.env.TRAVIS_BUILD_NUMBER,
     capabilities: {
         shardTestFiles: true,
         maxInstances: 4,
         browserName: 'firefox',
-      //  tunnel-identifier: process.env.TRAVIS_JOB_NUMBER,
-        // BuildName: process.env.TRAVIS_BRANCH +'-'+process.env.TRAVIS_BUILD_NUMBER,
-        Build: process.env.TRAVIS_BRANCH +'-'+process.env.TRAVIS_BUILD_NUMBER,
+        Build: 'protractor-retry-'+process.env.TRAVIS_BRANCH +'-'+process.env.TRAVIS_BUILD_NUMBER,
         name: process.env.TRAVIS_BRANCH +'-'+process.env.TRAVIS_BUILD_NUMBER
     },
     sauceUser: process.env.SAUCE_USERNAME,
