@@ -10,8 +10,8 @@ exports.config = {
     capabilities: {
         shardTestFiles: true,
         maxInstances: 4,
-        browserName: 'firefox'
-        tunnel-identifier: process.env.TRAVIS_JOB_NUMBER,
+        browserName: 'firefox',
+      //  tunnel-identifier: process.env.TRAVIS_JOB_NUMBER,
         build: process.env.TRAVIS_BUILD_NUMBER
     },
     sauceUser: process.env.SAUCE_USERNAME,
