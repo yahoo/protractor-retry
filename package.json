@@ -34,7 +34,6 @@
     "protractor": "^4.0.0",
     "q": "^1.4.1",
     "xml2js": "~0.4.17",
-    "webdriver-manager": "^12.0.1",
     "yargs": "^4.2.0"
   },
   "keywords": [
