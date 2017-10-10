@@ -5,5 +5,5 @@ node_js:
   - 6
 addons:
   sauce_connect:
-    username: "sso-yahoo-homepage-sauce"
-    access_key: "aa49ebab-cf98-4af8-bc7a-0ba8d1392d3c"
+    username: "pretry"
+    access_key: "dc3af908-f747-4245-989e-d34b8af7d387"
