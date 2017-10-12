@@ -12,7 +12,7 @@ env:
 deploy:
   provider: npm
   email: amro_t17@yahoo.com
-  api_key: ${NPM_KEY}
+  api_key: $NPM_TOKEN
   on:
     repo: yahoo/protractor-retry
     branch: master
