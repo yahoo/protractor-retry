@@ -12,8 +12,8 @@ env:
 deploy:
   provider: npm
   email: amro_t17@yahoo.com
-  api_key:
-    secure: cCP1S18JS99fSg63BGPp1OvSFWB3bnEWJg9GAqhwUEGcgUZGU6QGpCCEmW3dB3xKtwOuvL2mVu44nXpL6exhAFn2MKl7DP/4vNKJ3W0WQ4TptrF0YHe3tBkErUVr32lRXzTCI8Biy/0NQzqlJLBQ5YpSPmkgB5k3wUvvhj5hHVaDy+Tg+UlNTzQVRZYxI22wYPCq5EX81RppCAGtTlGZchea3GII6bwr10TtagX7Akv13BUOU4vMzu6JCifQU1R7ZJijI8+cO2TbgLpOcH2VQaw7wCPYFITLMsWTe6sSWlkwl636SY/jvtjHsP0HVkrXbj65saNE/+e7B0ggmfSqXxC/Yzm2oj8pITEF8jogyC9cnDIkZ28KdcsuqX1TvkG2wV8mQFCBaVydUHOdE14zEOjetmwU3K+ZOaZjXLTtdAY/qQvF5h7GHGZaPM3uvhUtj7FrIBIYq5rRIdKtOZZdLf/3JKZ9ahrk1XSjL34EhVYtB8BaA3auVEtwQVCA61IOeuNGSulK+5SGDj4T8hH4d/cT07tBNh1vGU/HTcjbHZUgeRc94Rqer287QLLG3OJcTqnQ/VH7vz/n3jeImf+gfi01MZyNaajLm9UxUzRWsCM9jtIZkGhuB+OLuQ9pU3MhylXyPvsvp1Sya3qBKy0Y5l0rXynMP5Q8GL+6LyYbFSA=
+  api_key: ${NPM_KEY}
   on:
     repo: yahoo/protractor-retry
     branch: master
+
