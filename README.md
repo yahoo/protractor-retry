@@ -8,6 +8,7 @@
  * Mocha & Jasmine are supported.
  
  
+  
 <img src="https://user-images.githubusercontent.com/12041605/30343044-cd942a4c-97b0-11e7-850e-a7111996a554.png" align="center" height="75" width="600" /><br/><br/>
 
 This module fully relies on protractor available callbacks and internal functionalities.
