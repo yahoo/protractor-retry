@@ -1,4 +1,5 @@
 <a href="https://badge.fury.io/js/protractor-retry"><img src="https://badge.fury.io/js/protractor-retry.svg" alt="npm version" height="18"></a>
+[![Build Status](https://travis-ci.org/yahoo/protractor-retry.svg?branch=master)](https://travis-ci.org/yahoo/protractor-retry)
 
 ## Protractor-retry
 
@@ -6,9 +7,9 @@
  * This module used protractor features to automatically re-run failed tests with a specific configurable number of attempts.
  * This module is added in our CICD pipelines  where we have a zero failure policy in order to bless an environment.
  * Mocha & Jasmine are supported.
- 
- 
-  
+
+
+
 <img src="https://user-images.githubusercontent.com/12041605/30343044-cd942a4c-97b0-11e7-850e-a7111996a554.png" align="center" height="75" width="600" /><br/><br/>
 
 This module fully relies on protractor available callbacks and internal functionalities.
