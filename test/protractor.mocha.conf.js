@@ -6,7 +6,7 @@ exports.config = {
     mochaOpts: {
         enableTimeouts: false
     },
-    specs: ['./specs/*.spec.js'],
+    specs: ['./mocha/*.spec.js'],
     capabilities: {
         shardTestFiles: true,
         maxInstances: 4,
