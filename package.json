@@ -9,6 +9,7 @@
   },
   "scripts": {
     "lint": "eslint .",
+    "release": "standard-version",
     "test": "protractor test/protractor.conf.js"
   },
   "author": "Amro Tahtamouni",
@@ -33,6 +34,7 @@
     "mocha": "~2.4.5",
     "protractor": "^4.0.0",
     "q": "^1.4.1",
+    "standard-version": "4.2.0",
     "xml2js": "~0.4.17",
     "yargs": "^4.2.0"
   },
