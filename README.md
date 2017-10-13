@@ -75,7 +75,7 @@ exports.config = {
 
 ### Example
 
-Checkout this Mocha Example [protractor.mocha.conf.js](test/protractor.mocha.conf.js)
+Checkout this Mocha Example [protractor.mocha.conf.js](test/protractor.mocha.conf.js)<br/>
 Checkout this Jasmine Example [protractor.jasmine.conf.js](test/protractor.jasmine.conf.js)
 
 ### Known Caveat
