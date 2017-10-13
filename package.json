@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint .",
     "release": "standard-version",
-    "test": "protractor test/protractor.conf.js"
+    "test": "protractor test/protractor.mocha.conf.js;protractor test/protractor.jasmine.conf.js",
   },
   "author": "Amro Tahtamouni",
   "contributors": [
@@ -31,6 +31,7 @@
     "debug": "^2.1.1",
     "eslint": "^1.5.1",
     "eslint-config-eslint": "^4.0.0",
+    "jasmine-expect": "^2.0.2",
     "mocha": "~2.4.5",
     "protractor": "^4.0.0",
     "q": "^1.4.1",
