@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint .",
     "release": "standard-version",
-    "test": "protractor test/protractor.mocha.conf.js;protractor test/protractor.jasmine.conf.js;protractor test/protractor.suite.conf.js --suite=mochasuite"
+    "test": "protractor test/protractor.mocha.conf.js;echo '######### MOCHA DONE ########';protractor test/protractor.jasmine.conf.js;echo '######### JASMINE DONE ########';DEBUG=ProtractorRetry protractor test/protractor.suite.conf.js --suite=mochasuite"
   },
   "author": "Amro Tahtamouni",
   "contributors": [
