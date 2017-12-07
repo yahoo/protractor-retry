@@ -75,8 +75,9 @@ exports.config = {
 
 ### Example
 
-Checkout this Mocha Example [protractor.mocha.conf.js](test/protractor.mocha.conf.js)<br/>
-Checkout this Jasmine Example [protractor.jasmine.conf.js](test/protractor.jasmine.conf.js)
+* Checkout this Mocha Example [protractor.mocha.conf.js](test/protractor.mocha.conf.js)
+* Checkout this Jasmine Example [protractor.jasmine.conf.js](test/protractor.jasmine.conf.js)
+* Checkout this TestSuite Example with DEBUG activated [protractor.suite.conf.js](test/protractor.suite.conf.js)
 
 ### Known Caveat
 If you are NOT Running in Parallel mode, the package will retry the whole testsuite if any failure.
