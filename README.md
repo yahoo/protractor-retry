@@ -73,7 +73,7 @@ exports.config = {
 };
 ```
 
-### Example
+### Examples
 
 * Checkout this Mocha Example [protractor.mocha.conf.js](test/protractor.mocha.conf.js)
 * Checkout this Jasmine Example [protractor.jasmine.conf.js](test/protractor.jasmine.conf.js)
