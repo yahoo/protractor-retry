@@ -24,6 +24,9 @@
     }
   ],
   "license": "MIT",
+  "dependencies": {
+    "cross-spawn": "^5.0.0"
+  },
   "devDependencies": {
     "array-unique": "~0.3.2",
     "chai": "3.x",
