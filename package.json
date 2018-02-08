@@ -1,5 +1,5 @@
 {
-  "version": "1.1.7",
+  "version": "1.1.8",
   "name": "protractor-retry",
   "description": "module for protractor to automatically re-run failed tests with specific number of attempts",
   "main": "index.js",
@@ -37,7 +37,7 @@
     "q": "^1.4.1",
     "standard-version": "4.2.0",
     "xml2js": "~0.4.17",
-    "yargs": "^4.2.0"
+    "yargs": "^11.0.0"
   },
   "keywords": [
     "protractor",

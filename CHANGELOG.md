@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.8"></a>
+## 1.1.8 (2018-02-08)
+
+
+### Bug Fixes
+
+* Protractor Config Link in README ([903d0a0](https://github.com/yahoo/Protractor-retry/commit/903d0a0))
+* support of the latest yargs version
+* update README
+
+
 <a name="1.1.7"></a>
 ## 1.1.7 (2017-12-07)
 
