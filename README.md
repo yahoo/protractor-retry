@@ -79,5 +79,8 @@ exports.config = {
 * Checkout this Jasmine Example [protractor.jasmine.conf.js](test/protractor.jasmine.conf.js)
 * Checkout this TestSuite Example with DEBUG activated [protractor.suite.conf.js](test/protractor.suite.conf.js)
 
+Those 3 examples run for the functional tests of this pkg, feel free to take a look to check the flow of the retry.
+
 ### Known Caveat
-If you are NOT Running in Parallel mode, the package will retry the whole testsuite if any failure.
+* If you are NOT Running in Parallel mode, the package will retry the whole testsuite if any failure.
+* Windows as en environment to launch / use this package is not yet supported.
