@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.9"></a>
+## 1.1.9 (2018-03-15)
+
+
+### Bug Fixes
+
+* explicit management of the exitCode (0 or 1) https://github.com/yahoo/protractor-retry/pull/29
+
+
 <a name="1.1.8"></a>
 ## 1.1.8 (2018-02-08)
 
