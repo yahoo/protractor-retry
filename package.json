@@ -1,5 +1,5 @@
 {
-  "version": "1.1.9",
+  "version": "1.2.0",
   "name": "protractor-retry",
   "description": "module for protractor to automatically re-run failed tests with specific number of attempts",
   "main": "index.js",
@@ -16,11 +16,11 @@
   "contributors": [
     {
       "name": "Amro Tahtamouni",
-      "email": "amrot@yahoo-inc.com"
+      "email": "amrot@oath.com"
     },
     {
       "name": "Dreux Ludovic",
-      "email": "dreuxl@yahoo-inc.com"
+      "email": "dreuxl@oath.com"
     }
   ],
   "license": "MIT",
@@ -41,6 +41,9 @@
   },
   "keywords": [
     "protractor",
-    "retry"
+    "retry",
+    "automation",
+    "javascript",
+    "tests"
   ]
 }
