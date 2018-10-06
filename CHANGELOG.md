@@ -8,8 +8,8 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* Protractor Config Link in README ([903d0a0](https://github.com/yahoo/Protractor-retry/commit/903d0a0))
-* Moving packages from devDependencies to Dependencies
+* Moving packages from devDependencies to Dependencies https://github.com/yahoo/protractor-retry/pull/47
+* update README
 
 <a name="1.2.0"></a>
 ## 1.2.0 (2018-05-11)
