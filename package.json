@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "name": "protractor-retry",
   "description": "module for protractor to automatically re-run failed tests with specific number of attempts",
   "main": "index.js",
