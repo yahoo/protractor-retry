@@ -2,8 +2,11 @@
 var retry = require('../lib/retry');
 
 exports.config = {
-    framework: 'jasmine2',
-    specs: ['./jasmine/*.spec.js'],
+    framework: 'mocha',
+    specs: ['./mocha/*.spec.js'],
+    mochaOpts: {
+        enableTimeouts: false
+    },
     capabilities: {
         shardTestFiles: true,
         maxInstances: 4,
@@ -12,14 +15,17 @@ exports.config = {
         name: __filename
     },
     sauceUser: 'YOUR_SAUCE_USER',
-    sauceKey: 'YOUR_SAUCE_KEY',
+    sauceKey: '_YOUR_SAUCE_KEY',
     onCleanUp: function (results) {
         retry.onCleanUp(results);
     },
     onPrepare: function () {
         retry.onPrepare();
-        require('jasmine-expect');
-	browser.ignoreSynchronization = true;
+        var chai = require('chai');
+        var chaiAsPromised = require('chai-as-promised');
+        chai.use(chaiAsPromised);
+        global.expect = chai.expect;
+        browser.ignoreSynchronization = true;
     },
     afterLaunch: function() {
         return retry.afterLaunch(2); // number of retries ( default is 2 )

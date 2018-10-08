@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "name": "protractor-retry",
   "description": "module for protractor to automatically re-run failed tests with specific number of attempts",
   "main": "index.js",
@@ -24,20 +24,24 @@
     }
   ],
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "array-unique": "~0.3.2",
     "chai": "3.x",
     "chai-as-promised": "5.x",
     "debug": "^2.1.1",
+    "lodash": "^4.13.1",
+    "mkdirp": "^0.5.1",
+    "q": "^1.4.1",
+    "xml2js": "~0.4.17",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
     "eslint": "^1.5.1",
     "eslint-config-eslint": "^4.0.0",
     "jasmine-expect": "^2.0.2",
     "mocha": "~2.4.5",
     "protractor": "^4.0.0",
-    "q": "^1.4.1",
-    "standard-version": "4.2.0",
-    "xml2js": "~0.4.17",
-    "yargs": "^11.0.0"
+    "standard-version": "4.2.0"
   },
   "keywords": [
     "protractor",

@@ -14,11 +14,14 @@
 
 This module fully relies on protractor available callbacks and internal functionalities.
 
-It is from within protractor itself and not relying on any external dependency. All the changes that you need to add in order to integrate this module is located only in one file, the protractor configuration file. **You don’t need to update a single line of the *spec.js files.**
+It is build from within protractor itself and not relying on any external dependency. All the changes that you need to add in order to integrate this module is located only in one file, the protractor configuration file, ie to summarize :
+
+ * **You don’t need to update a single line of your tests spec.js files.**
+ * **Only few lines to add in your protractor conf file needed.**
 
 The module will create an XML file which contains the failed spec(s) filename(s). and will re-run only them, till either we don't have anymore failures or we reached the retry attempt maximum.
 
-The process of retrying is not happening on the fly of a test failure but only after the whole testsuite is run. The failed tests are stored and only those ones are going to be rerun.
+The process of retrying is not happening on the fly of a test failure but only after the whole testsuite is run. The failed tests are stored and only those ones are going to be rerun afterwards by creating on the fly a new "failed only" files testsuite.
 
 <img src="https://user-images.githubusercontent.com/12041605/30344129-ea28261e-97b4-11e7-99fe-4a28ff74b547.jpg" align="center" height="390" width="390" /><br/><br/>
 
@@ -83,4 +86,4 @@ Those 3 examples are actually used for the functional tests of this pkg, feel fr
 
 ### Known Caveat
 * If you are NOT Running in Parallel mode, the package will retry the whole testsuite if any failure.
-* Windows as an environment to launch / use this package is not yet supported.
+* **Windows** as an environment to launch / use this package is unfortunately not yet supported.
