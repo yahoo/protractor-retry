@@ -82,8 +82,8 @@ exports.config = {
 * Checkout this Jasmine (Chrome cap.) Example [protractor.jasmine.conf.js](test/protractor.jasmine.conf.js)
 * Checkout this TestSuite (IE11 cap.) Example with DEBUG activated [protractor.suite.conf.js](test/protractor.suite.conf.js)
 
-Those 3 examples are actually used for the functional tests of this pkg, feel free to take a look at the Travis output to check out the flow of the retries.
+Those 3 examples are actually used for the functional tests of this package. Please take a look at the [Travis](https://travis-ci.org/yahoo/protractor-retry) output to check out the flow of the retries.
 
 ### Known Caveat
 * If you are NOT Running in Parallel mode, the package will retry the whole testsuite if any failure.
-* **Windows** as an environment to launch / use this package is unfortunately not yet supported.
+* **Windows** as an environment to launch & use this package is unfortunately not yet supported.
