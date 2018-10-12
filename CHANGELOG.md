@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.2"></a>
+## 1.2.2 (2018-10-12)
+
+
+### Bug Fixes
+
+* Protractor Config Link in README ([903d0a0](https://github.com/yahoo/Protractor-retry/commit/903d0a0))
+
+
+
 <a name="1.2.1"></a>
 ## 1.2.1 (2018-10-05)
 
