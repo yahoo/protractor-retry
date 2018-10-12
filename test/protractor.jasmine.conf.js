@@ -19,7 +19,7 @@ exports.config = {
     onPrepare: function () {
         retry.onPrepare();
         require('jasmine-expect');
-	browser.ignoreSynchronization = true;
+        browser.ignoreSynchronization = true;
     },
     afterLaunch: function() {
         return retry.afterLaunch(2); // number of retries ( default is 2 )

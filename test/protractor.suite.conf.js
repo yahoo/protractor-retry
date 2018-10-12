@@ -7,7 +7,7 @@ exports.config = {
         enableTimeouts: false
     },
     suites: {
-      mochasuite: 'mocha/*.spec.js'
+        mochasuite: 'mocha/*.spec.js'
     },
     capabilities: {
         shardTestFiles: true,
