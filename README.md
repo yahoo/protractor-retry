@@ -35,7 +35,7 @@ npm i -g  protractor-retry
 
 #### Step 1: Require the Package ( Your Protractor Config )
 ```js
-var retry = require('protractor-retry');
+var retry = require('protractor-retry').retry;
 ```
 
 #### Step 2: onPrepare ( Your Protractor Config )
