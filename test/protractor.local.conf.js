@@ -5,7 +5,7 @@ exports.config = {
     framework: 'mocha',
     specs: ['./mocha/*.spec.js'],
     mochaOpts: {
-        enableTimeouts: false
+        timeout: false
     },
     capabilities: {
         shardTestFiles: true,
