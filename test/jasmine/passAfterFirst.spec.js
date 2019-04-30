@@ -6,8 +6,10 @@ describe('Test Retry', function() {
         browser.get('https://www.yahoo.com').then(function() {
             if (argv.retry) {
                 expect(true).toEqual(true);
+                done();
             } else {
                 expect(true).toEqual(false);
+                done.fail("Test NOK.");
             }
         });
     });
