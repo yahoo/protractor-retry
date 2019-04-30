@@ -4,7 +4,7 @@ var retry = require('../lib/retry');
 exports.config = {
     framework:'mocha',
     mochaOpts: {
-        enableTimeouts: false
+        timeout: false
     },
     suites: {
         mochasuite: 'mocha/*.spec.js'
