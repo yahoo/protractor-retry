@@ -4,6 +4,12 @@ var retry = require('../lib/retry');
 exports.config = {
     framework: 'jasmine2',
     specs: ['./jasmine/*.spec.js'],
+    jasmineNodeOpts: {
+        // If true, print colors to the terminal.
+        showColors: true,
+        // Default time to wait in ms before a test fails.
+        defaultTimeoutInterval: 30000
+    }
     capabilities: {
         shardTestFiles: true,
         maxInstances: 4,

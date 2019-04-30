@@ -2,7 +2,7 @@
 var argv = require('yargs').argv;
 
 describe('Test Retry', function() {
-    it('retry', function() {
+    it('retry', function(done) {
         browser.get('https://www.yahoo.com').then(function() {
             if (argv.retry === 2 ) {
                 expect(true).toEqual(true);
