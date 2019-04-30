@@ -9,7 +9,7 @@ exports.config = {
         showColors: true,
         // Default time to wait in ms before a test fails.
         defaultTimeoutInterval: 30000
-    }
+    },
     capabilities: {
         shardTestFiles: true,
         maxInstances: 4,
