@@ -1,6 +1,10 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.2.9](https://github.com/yahoo/Protractor-retry/compare/v1.2.8...v1.2.9) (2019-07-01)
+
+
 
 <a name="1.2.8"></a>
 ## [1.2.8](https://github.com/yahoo/Protractor-retry/compare/v1.2.6...v1.2.8) (2019-04-30)
