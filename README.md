@@ -1,7 +1,7 @@
-<a href="https://badge.fury.io/js/protractor-retry"><img src="https://badge.fury.io/js/protractor-retry.svg" alt="npm version" height="18"></a>
-[![Build Status](https://travis-ci.org/yahoo/protractor-retry.svg?branch=master)](https://travis-ci.org/yahoo/protractor-retry)
+<a href="https://badge.fury.io/js/protractor-retry-angular-cli"><img src="https://badge.fury.io/js/protractor-retry-angular-cli.svg" alt="npm version" height="18"></a>
+[![Build Status](https://travis-ci.org/eromano/protractor-retry-angular-cli-angular-cli.svg?branch=master)](https://travis-ci.org/eromano/protractor-retry-angular-cli-angular-cli)
 
-## Protractor-retry
+## protractor-retry-angular-cli
 
  * A solution to address the **flakyness** of your Protractor FE automation test suites.  
  * This module used protractor features to automatically re-run failed tests with a specific configurable number of attempts.
@@ -30,12 +30,12 @@ The process of retrying is not happening on the fly of a test failure but only a
 #### Install
 
 ```
-npm i -g  protractor-retry
+npm i -g  protractor-retry-angular-cli
 ```
 
 #### Step 1: Require the Package ( Your Protractor Config )
 ```js
-var retry = require('protractor-retry').retry;
+var retry = require('protractor-retry-angular-cli').retry;
 ```
 
 #### Step 2: onPrepare ( Your Protractor Config )
@@ -82,7 +82,7 @@ exports.config = {
 * Checkout this Jasmine (Chrome cap.) Example [protractor.jasmine.conf.js](test/protractor.jasmine.conf.js)
 * Checkout this TestSuite (IE11 cap.) Example with DEBUG mode activated [protractor.suite.conf.js](test/protractor.suite.conf.js)
 
-Those 3 examples are actually used for the functional tests coverage of this package. Please take a look at the [Travis output](https://travis-ci.org/yahoo/protractor-retry) to check out the flow of the retries.
+Those 3 examples are actually used for the functional tests coverage of this package. Please take a look at the [Travis output](https://travis-ci.org/eromano/protractor-retry-angular-cli-angular-cli) to check out the flow of the retries.
 
 ### Known Caveat
 * If you are NOT Running in Parallel mode, the package will retry the whole testsuite if any failure.
