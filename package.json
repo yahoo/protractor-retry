@@ -30,25 +30,25 @@
   "license": "MIT",
   "dependencies": {
     "array-unique": "~0.3.2",
-    "chai": "3.x",
-    "chai-as-promised": "5.x",
     "cross-spawn": "^7.0.2",
-    "debug": "^2.1.1",
     "lodash": "^4.17.19",
-    "mkdirp": "^0.5.1",
-    "q": "^1.4.1",
-    "xml2js": "~0.4.17",
-    "yargs": "^16.1.1"
+    "yargs": "^16.1.1",
+    "chai": "4.x",
+    "chai-as-promised": "7.x",
+    "debug": "^4.1.1",
+    "mkdirp": "^1.0.3",
+    "q": "^1.5.1",
+    "xml2js": "~0.4.23"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-eslint": "^6.0.0",
     "eslint-plugin-jsdoc": "^15.12.2",
     "eslint-plugin-node": "^9.2.0",
-    "jasmine-expect": "^2.0.2",
     "mocha": "^8.1.0",
-    "protractor": "^5.0.0",
-    "standard-version": "^9.0.0"
+    "standard-version": "^9.0.0",
+    "jasmine-expect": "^4.0.3",
+    "protractor": "^5.4.3"
   },
   "keywords": [
     "protractor",
