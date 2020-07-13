@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yahoo/Protractor-retry"
+    "url": "https://github.com/eromano/protractor-retry-angular-cli"
   },
   "scripts": {
     "lint": "eslint .",
