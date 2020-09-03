@@ -1,4 +1,3 @@
-sudo: false
 os:
   - osx
   - windows
@@ -20,3 +19,7 @@ deploy:
   on:
     repo: yahoo/protractor-retry
     branch: master
+script: 
+  - echo "When does it echo anything?"
+  - echo $PATH 
+  - which pwd
