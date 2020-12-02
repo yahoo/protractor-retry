@@ -14,8 +14,8 @@ exports.config = {
         Build: 'localrun-'+new Date(),
         name: __filename
     },
-    sauceUser: 'pretry',
-    sauceKey: 'dc3af908-f747-4245-989e-d34b8af7d387',
+    sauceUser: 'YOUR_SAUCE_USER',
+    sauceKey: '_YOUR_SAUCE_KEY',
     onCleanUp: function (results) {
         retry.onCleanUp(results);
     },
