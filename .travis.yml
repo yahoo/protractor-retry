@@ -1,4 +1,6 @@
-sudo: false
+os:
+  - osx
+  - windows
 language: node_js
 node_js:
 - 10
@@ -17,3 +19,8 @@ deploy:
   on:
     repo: yahoo/protractor-retry
     branch: master
+before_install:
+  - echo $PATH; echo "before install"    
+before_script: 
+  - echo $PATH ;echo "before script"    
+  - which sauce-connect

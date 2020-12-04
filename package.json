@@ -36,6 +36,7 @@
     "yargs": "^16.1.1"
   },
   "devDependencies": {
+    "cross-spawn": "^7.0.0",
     "eslint": "^6.8.0",
     "eslint-config-eslint": "^6.0.0",
     "eslint-plugin-jsdoc": "^15.12.2",
