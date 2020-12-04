@@ -33,7 +33,7 @@
     "mkdirp": "^0.5.1",
     "q": "^1.4.1",
     "xml2js": "~0.4.17",
-    "yargs": "^15.4.1"
+    "yargs": "^16.1.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -43,7 +43,7 @@
     "jasmine-expect": "^2.0.2",
     "mocha": "^8.1.0",
     "protractor": "^5.0.0",
-    "standard-version": "^8.0.1"
+    "standard-version": "^9.0.0"
   },
   "keywords": [
     "protractor",
