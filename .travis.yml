@@ -1,7 +1,39 @@
-sudo: false
 language: node_js
+dist: bionic
+arch: arm64-graviton2
 node_js:
-- 12
+  - 12
+  - 14
+
+git:
+  depth: 100
+
+addons:
+    chrome: stable
+
+services:
+    - xvfb
+
+branches:
+  only:
+    - master
+
+stages:
+  - name: Checks
+    if: type == pull_request
+
+jobs:
+  include:
+    - stage: Checks
+      name: "Lint"
+      before_script: npm ci
+      script: npm run lint
+
+    - stage: Checks
+      name: "Tests"
+      before_script: npm ci && webdriver-manager update --gecko=false --versions.chrome=$(google-chrome --product-version)
+      script: npm test
+
 deploy:
   provider: npm
   email: $NPM_EMAIL
