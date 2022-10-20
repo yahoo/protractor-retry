@@ -23,8 +23,5 @@ module.exports = {
         "node": true,
         "browser": true
     },
-    "extends": "eslint:recommended",
-    "ecmaFeatures": {
-        "jsx": true
-    }
+    "extends": "eslint:recommended"
 };
