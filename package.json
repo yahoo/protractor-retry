@@ -1,11 +1,11 @@
 {
-  "version": "2.0.5",
-  "name": "protractor-retry",
+  "version": "2.1.0",
+  "name": "protractor-retry-with-failed-spec-deletion",
   "description": "module for protractor to automatically re-run failed tests with specific number of attempts",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dmytro-rodionov-tes/protractor-retry"
+    "url": "https://github.com/dmytro-rodionov-tes/protractor-retry-with-failed-spec-deletion"
   },
   "scripts": {
     "lint": "eslint .",
