@@ -9,6 +9,7 @@
   },
   "scripts": {
     "lint": "eslint .",
+    "webdriver-update": "webdriver-manager update --versions.chrome=106.0.5249.119",
     "release": "standard-version",
     "test:mocha": "protractor test/protractor.mocha.conf.js",
     "test:jasmine": "protractor test/protractor.jasmine.conf.js",
