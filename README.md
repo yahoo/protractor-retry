@@ -1,11 +1,8 @@
-<a href="https://badge.fury.io/js/protractor-retry"><img src="https://badge.fury.io/js/protractor-retry.svg" alt="npm version" height="18"></a>
-[![Build Status](https://travis-ci.org/yahoo/protractor-retry.svg?branch=master)](https://travis-ci.org/yahoo/protractor-retry)
+## protractor-retry
 
-## Protractor-retry
-
- * A solution to address the **flakyness** of your Protractor FE automation test suites.  
+ * A solution to address the **flakiness** of your Protractor FE automation test suites.  
  * This module used protractor features to automatically re-run failed tests with a specific configurable number of attempts.
- * This module is added in our CICD pipelines  where we have a zero failure policy in order to bless an environment.
+ * This module is added in our CI/CD pipelines  where we have a zero failure policy in order to bless an environment.
  * Mocha & Jasmine are supported.
  * NEW : WINDOWS Support UPDATE : Windows as an env to launch with version 2.0.1
 
@@ -41,13 +38,13 @@ var retry = require('protractor-retry').retry;
 
 #### Step 2: onPrepare ( Your Protractor Config )
 ```js
-onPrepare: function() {
+onPrepare: () => {
   retry.onPrepare();
 }
 ```
 #### Step 3: onCleanUp ( Your Protractor Config )
 ```js
-onCleanUp = function(results) {
+onCleanUp = (results) => {
     retry.onCleanUp(results);
 };
 ```
@@ -55,7 +52,7 @@ It is Mandatory to provide the `results` to the retry.onCleanUp function
 
 #### Step 4: afterLaunch ( Your Protractor Config )
  ```js
-afterLaunch = function() {
+afterLaunch = () => {
     return retry.afterLaunch(NUMBER_OF_RETRIES);
 }
 ```
@@ -65,13 +62,13 @@ It is Mandatory to use `return` here
 ```js
 exports.config = {
     // rest of your config
-    onCleanUp: function (results) {
+    onCleanUp: (results) => {
         retry.onCleanUp(results);
     },
-    onPrepare: function () {
+    onPrepare: () => {
         retry.onPrepare();
     },
-    afterLaunch: function() {
+    afterLaunch: () => {
         return retry.afterLaunch(2);
     }
 };
@@ -82,8 +79,6 @@ exports.config = {
 * Checkout this Mocha (Firefox capability) Example [protractor.mocha.conf.js](test/protractor.mocha.conf.js)
 * Checkout this Jasmine (Chrome cap.) Example [protractor.jasmine.conf.js](test/protractor.jasmine.conf.js)
 * Checkout this TestSuite (IE11 cap.) Example with DEBUG mode activated [protractor.suite.conf.js](test/protractor.suite.conf.js)
-
-Those 3 examples are actually used for the functional tests coverage of this package. Please take a look at the [Travis output](https://travis-ci.org/yahoo/protractor-retry) to check out the flow of the retries.
 
 ### Known Caveat
 * If you are NOT Running in Parallel mode, the package will retry the whole testsuite if any failure.
