@@ -9,7 +9,7 @@ describe('Test Retry', function() {
                 done();
             } else {
                 expect(true).toEqual(false);
-                done.fail("Test NOK.");
+                done.fail('Test NOK.');
             }
         });
     });
