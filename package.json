@@ -10,7 +10,9 @@
   "scripts": {
     "lint": "eslint .",
     "release": "standard-version",
-    "test": "protractor test/protractor.mocha.conf.js;echo '######### MOCHA DONE ########';protractor test/protractor.jasmine.conf.js;echo '######### JASMINE DONE ########';DEBUG=ProtractorRetry protractor test/protractor.suite.conf.js --suite=mochasuite"
+    "test": "protractor test/protractor.mocha.conf.js;echo '######### MOCHA DONE ########';protractor test/protractor.jasmine.conf.js;echo '######### JASMINE DONE ########';DEBUG=ProtractorRetry protractor test/protractor.suite.conf.js --suite=mochasuite",
+    "testlocal": "protractor test/protractor.local.conf.js"
+  
   },
   "author": "Amro Tahtamouni",
   "contributors": [
@@ -20,7 +22,7 @@
     },
     {
       "name": "Dreux Ludovic",
-      "email": "dreuxl@verizonmedia.com"
+      "email": "dreuxl@yahooinc.com"
     }
   ],
   "license": "MIT",
